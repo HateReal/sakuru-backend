@@ -1,0 +1,16 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "npm run check && babel-node -r dotenv/config --extensions \".ts\"",
+  "ext": "ts",
+  "ignore": [
+    "*.test.ts"
+  ],
+  "inspect": true,
+  "verbose": true,
+  "watch": [
+    "src",
+    ".env"
+  ]
+}
