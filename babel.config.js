@@ -28,15 +28,6 @@ const aliasOption = {
 const decoratorsOption = {
   legacy: true,
 };
-const classPropertiesOption = {
-  loose: true,
-};
-const privatePropertyInObjectOtion = {
-  loose: true,
-};
-const privatePropertyMethodsOption = {
-  loose: true,
-};
 
 module.exports = {
   presets: [
@@ -46,8 +37,5 @@ module.exports = {
   plugins: [
     ["module-resolver", aliasOption],
     ["@babel/plugin-proposal-decorators", decoratorsOption],
-    ["@babel/plugin-proposal-class-properties", classPropertiesOption],
-    ["@babel/plugin-proposal-private-property-in-object", privatePropertyInObjectOtion],
-    ["@babel/plugin-proposal-private-methods", privatePropertyMethodsOption]
   ],
 };
